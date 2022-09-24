@@ -1,0 +1,12 @@
+html,body,.wrap{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+
+.wrap{
+    background-image: url('../images/pt.gif');
+    background-repeat: repeat-x;
+    /* ? repeat : x,y pattern, -x : x pattern,  -y : y pattern, no-repeat : none Pattern. */
+}
