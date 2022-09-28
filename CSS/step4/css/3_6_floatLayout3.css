@@ -1,34 +1,38 @@
 *{
     margin: 0; padding: 0; list-style: none;
 }
+
 header{
+    background-color: lightblue;
     width: 960px;
-    background-color: darkcyan;
     margin: 0 auto;
     position: relative;
-}
-header h1{
-    width: 200px;
-    background-color: blue;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
 }
 header div{
     position: absolute;
     right: 0;
     top: 30px;
 }
-nav{
-    background-color: lightblue;
+header h1{
+    background-color: darkcyan;
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
 }
-nav ul{
-    width: 960px;
+header nav ul{
+    background-color: lightslategrey;
     text-align: center;
 }
-nav ul li{
+header nav ul li{
     display: inline-block;
-    margin: 0 auto;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li a:hover{ 
+    color: white;
+    text-decoration: underline;
 }
 .marginLeft{
     margin-left: 20px;
@@ -44,22 +48,20 @@ nav ul li{
 }
 .wrap div{
     float: left;
-    margin-top: 80px;
+    width: 310px;
     border: 1px solid black;
     box-sizing: border-box;
-    width: 310px;
+    margin-top: 80px;
 }
 .latest2,
 .latest3{
     margin-left: 15px;
 }
 footer{
+    background-color: lightslategray;
     width: 960px;
-    height: 30px;
-    background-color: powderblue;
     margin: 0 auto;
-    text-align: center;
     color: white;
+    text-align: center;
     font-size: 20px;
-    line-height: 30px;
 }

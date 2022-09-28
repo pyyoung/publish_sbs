@@ -1,0 +1,81 @@
+*{margin: 0; padding: 0; list-style: none; text-decoration: none;}
+
+html,body{
+    width: 100%; 
+    height: 100%; 
+    background-color: black;
+    position: relative;
+}
+
+body>div:first-of-type{
+    width: 50%; 
+    height: 50%; 
+    background-color: #222;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    min-height: 295px;
+}
+
+nav ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav>ul>li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+}
+
+nav>ul>li:first-child{background-color: crimson; }
+
+nav>ul>li:first-child a{color: white;}
+
+nav>ul>li:not(:first-child){background-color: #555;}
+nav>ul>li:not(:first-child):hover{background-color: crimson;}
+nav>ul>li:not(:first-child):hover a{color: white;}
+
+nav>ul>li:not(:first-child) a{color: crimson;}
+
+body>div:first-of-type>h1{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 70px;
+    text-transform: capitalize;
+}
+
+fieldset{border: none;}
+
+fieldset ul li{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 30px;
+    height: 38px;
+}
+
+fieldset ul li::after{content: '';display: block; clear: both;}
+
+fieldset ul li>*{height: 100%;}
+
+fieldset ul li label{display: block; float: left; width: 20%; color: white; text-transform: uppercase;
+    background-color: crimson; line-height: 38px;}
+fieldset ul li input{float: left; width: 80%; border: none; padding: 12px 2.5%; box-sizing: border-box;}
+fieldset ul li input:focus{background-color: crimson;}
+
+input[value="login"]{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 38px;
+    background-color: #555;
+    border: none;
+    color: crimson;
+}
+
+input[value="login"]:hover{background-color: crimson; color: black;
+cursor: pointer;}

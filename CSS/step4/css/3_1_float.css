@@ -1,23 +1,34 @@
 .wrap{
     background-color: gray;
 }
-.wrap .exam_1 img{
+/* .wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+.wrap img{
     float: left;
 }
-.wrap .exam_1 p{
-    font-size: 30px; line-height: 40px; margin: 0;
+.wrap p{
+    font-size: 30px;
+    margin: 0;
+    line-height: 40px;
 }
-.wrap .exam_2{
+.exam_2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.exam_2{
     background-color: midnightblue;
 }
-.wrap .exam_2:after{
-    content: ''; display: block; clear: both;
+.exam_2 div{
+    background-color: aquamarine;
+    float: right;
+    width: 300px;
+    height: 300px;
+    
 }
-.wrap .exam_2 div{
-    width: 300px; height: 300px; float: left;
-    background-color: slateblue;
-}
-.wrap .exam_3{
+.exam_3{
     background-color: orange;
-    clear: left;
 }
