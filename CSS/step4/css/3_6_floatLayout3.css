@@ -1,27 +1,26 @@
 *{
     margin: 0; padding: 0; list-style: none;
 }
-
 header{
-    background-color: lightblue;
+    background-color: lightgrey;
     width: 960px;
     margin: 0 auto;
     position: relative;
+}
+header h1{
+    background-color: darkblue;
+    width: 200px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
 }
 header div{
     position: absolute;
     right: 0;
     top: 30px;
 }
-header h1{
-    background-color: darkcyan;
-    color: white;
-    width: 200px;
-    text-align: center;
-    margin: 0 auto;
-}
 header nav ul{
-    background-color: lightslategrey;
+    background-color: lightslategray;
     text-align: center;
 }
 header nav ul li{
@@ -29,17 +28,18 @@ header nav ul li{
 }
 header nav ul li a{
     text-decoration: none;
+    color: black;
 }
-header nav ul li a:hover{ 
-    color: white;
+header nav ul li a:hover{
     text-decoration: underline;
-}
-.marginLeft{
-    margin-left: 20px;
+    color: white;
 }
 .wrap{
     width: 960px;
     margin: 0 auto;
+}
+.marginLeft{
+    margin-left: 20px;
 }
 .wrap::after{
     content: '';
@@ -47,11 +47,11 @@ header nav ul li a:hover{
     clear: both;
 }
 .wrap div{
-    float: left;
-    width: 310px;
-    border: 1px solid black;
-    box-sizing: border-box;
     margin-top: 80px;
+    float: left;
+    border: 1px solid black;
+    width: 310px;
+    box-sizing: border-box;
 }
 .latest2,
 .latest3{
@@ -61,7 +61,7 @@ footer{
     background-color: lightslategray;
     width: 960px;
     margin: 0 auto;
-    color: white;
     text-align: center;
+    color: white;
     font-size: 20px;
 }

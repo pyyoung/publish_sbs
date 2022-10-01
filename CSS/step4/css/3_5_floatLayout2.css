@@ -1,0 +1,70 @@
+*{
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+body header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+body header h1{
+    background-color: red;
+    display: inline;
+    float: left;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
+body header nav{
+    background-color: blue;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+body header nav ul li{
+    display: inline-block;
+}
+body header nav ul li a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+body header nav ul li{
+    margin-left: 20px;
+}
+body header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.wrap section h2{
+    background-color: lightgreen;
+}
+.wrap section article{
+    float: left;
+}
+.wrap section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrap > section h3:first-of-type{
+    background-color: black;
+    color: white;
+}
+.wrap > section article{
+    width: 33.33%;
+
+}
+footer{
+    margin-top: 400px;
+    background-color: plum;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0; padding: 0;
+}
+html,body,.wrap{
+    background-color: antiquewhite;
+}
+body header{
+    width: 960px;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+body header nav{
+    background-color: aquamarine;
+}
+.wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrap{
+    width: 960px;
+    margin: 0 auto 30px;
+    
+}
+.wrap aside{
+    display: block;
+    width: 20%;
+    height: 800px;
+    background-color: lightcoral;
+    float: left;
+}
+.wrap section{
+    background-color: lightskyblue;
+    height: 800px;
+}
+footer{
+    background-color: palevioletred;
+    width: 960px;
+    margin: 0 auto;
+}
